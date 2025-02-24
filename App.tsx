@@ -5,10 +5,9 @@ import { Register } from './src/screens/Register';
 
 export const App = () => {
   return (
-    <Login/>
-    //<Register/>
+   // <Login/>
+    <Register/>
   )
 }
 
 export default App;
- 
