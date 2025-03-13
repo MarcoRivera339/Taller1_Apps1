@@ -21,8 +21,8 @@ export const StackNavigator = () => {
             }
         }}
         >
-            {/* <Stack.Screen name="Login" options={{title:'Login'}} component={Login} /> */}
-            {/* <Stack.Screen name="Register" options={{title:'Register',headerShown:false}} component={Register} /> */}
+            <Stack.Screen name="Login" options={{title:'Login'}} component={Login} />
+            <Stack.Screen name="Register" options={{title:'Register',headerShown:false}} component={Register} />
             <Stack.Screen name="Products" options={{title:'Products',headerShown:false}} component={Products} />
         </Stack.Navigator>
   )

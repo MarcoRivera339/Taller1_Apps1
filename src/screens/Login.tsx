@@ -21,9 +21,11 @@ export const Login = () => {
                 <TouchableOpacity style={[styles.button, styles.buttonCancel]}>
                     <Text style={styles.textButton}>Cancel</Text>
                 </TouchableOpacity>
+
                 <TouchableOpacity style={[styles.button, styles.buttonSignUp]}>
                     <Text style={styles.textButton}>Sign Up</Text>
                 </TouchableOpacity>
+                
                 <TouchableOpacity style={[styles.button, styles.buttonSignUp]}>
                     <Text style={styles.textButton}>Register</Text>
                 </TouchableOpacity>
