@@ -1,7 +1,10 @@
+import { CommonActions, useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { Image, ImageBackground, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 export const Login = () => {
+    //hook useNavigation
+    const navigation = useNavigation();
 
     return (
         <ImageBackground
@@ -25,10 +28,11 @@ export const Login = () => {
                 <TouchableOpacity style={[styles.button, styles.buttonSignUp]}>
                     <Text style={styles.textButton}>Sign Up</Text>
                 </TouchableOpacity>
-                
-                <TouchableOpacity style={[styles.button, styles.buttonSignUp]}>
+
+                <TouchableOpacity style={[styles.button, styles.buttonSignUp]} onPress={()=>navigation.dispatch(CommonActions.navigate({name:'Register'}))}>
                     <Text style={styles.textButton}>Register</Text>
                 </TouchableOpacity>
+                
             </View>
         </ImageBackground>
     );
